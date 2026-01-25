@@ -6,6 +6,7 @@ import Contact from "./sections/Contact";
 import Experience from "./sections/Experience";
 import Footer from "./sections/Footer";
 import Home from "./sections/Home";
+import Instagram from "./sections/Instagram";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 // import Testimonials from "./sections/Testimonials";
@@ -21,6 +22,7 @@ export default function App() {
       <Skills />
       <Projects />
       <Experience />
+      <Instagram/>
       
       <Contact />
       <Footer />
