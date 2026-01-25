@@ -9,6 +9,7 @@ import Home from "./sections/Home";
 import Instagram from "./sections/Instagram";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
+ import { ToastContainer } from 'react-toastify';
 // import Testimonials from "./sections/Testimonials";
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
       
       <Contact />
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

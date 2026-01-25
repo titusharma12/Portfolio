@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoSparklesOutline } from "react-icons/io5";
 import { socials } from "../components/Constants";
+ import { toast } from 'react-toastify';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -27,17 +28,19 @@ export default function Contact() {
     });
 
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
 
     if (res.ok) {
-      alert("Message sent successfully!");
+      // alert("Message sent successfully!");
+      toast.success("Message sent successfully!");
       setFormData({ name: "", email: "", message: "", phone: "" });
     } else {
       alert(data.message || "Failed to send message");
     }
   } catch (error) {
     console.error("Error:", error);
-    alert("Failed to send message. Please check your connection and try again.");
+    // alert("Failed to send message. Please check your connection and try again.");
+    toast.error("Failed to send message. Please check your connection and try again.");
   } finally {
     setIsSubmitting(false);
   }
