@@ -141,8 +141,8 @@ export default function Home() {
                 View My Work
               </a>
               <a
-                href="/TituSharmaResume2026.pdf"
-                download
+                href="https://drive.google.com/uc?export=download&id=1DmJN_NQ_wtmMnpbx0YaIKcVFJySoefCh"
+                download="TituSharmaResume2026.pdf"
                 className="px-6 py-3 text-white font-medium text-lg  rounded-full border-2 border-white hover:bg-white hover:text-black hover:scale-[1.03] hover:shadow-lg"
               >
                 My Resume
